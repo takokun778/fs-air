@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        GOLANG_VERSION: ${GOLANG_VERSION}
     ports:
       - 8080:8080
     volumes:
